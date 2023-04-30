@@ -1,0 +1,23 @@
+package aritmética;
+import java.util.Scanner;
+
+public class Aritmética {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		float razao = 0, inicial = 0;
+		int termos = 0;
+		
+		System.out.print("Digite o A1: ");
+		inicial = sc.nextFloat();
+		System.out.print("Digite Quantos termos terá a PA: ");
+		termos = sc.nextInt();
+		System.out.print("Digite a Razão: ");
+		razao = sc.nextFloat();
+		
+		for(float i = inicial; i <= inicial + (termos-1) * razao; i = i + razao) {
+			System.out.print(i + " | ");
+		}
+	}
+}

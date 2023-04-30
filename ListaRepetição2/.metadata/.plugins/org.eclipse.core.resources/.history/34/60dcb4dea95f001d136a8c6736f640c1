@@ -1,0 +1,49 @@
+package faixasEtárias;
+import java.util.Scanner;
+
+public class FaixasEtárias {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int resp = 1;
+		float idade = 0, menores = 0, jovensAdultos = 0, adultos = 0, maduros = 0, idosos = 0, total = 0;
+		
+		while(resp != 0) {
+			System.out.print("Digite a idade da pessoa: ");
+			idade = sc.nextFloat();
+			
+			if(idade > 0 && idade <= 17) {
+				menores ++;
+			}else if(idade > 18 && idade <= 35) {
+				jovensAdultos++;
+			}else if(idade > 35 && idade <= 50) {
+				adultos++;
+			}else if(idade > 50 && idade <= 65) {
+				maduros++;
+			}else if(idade > 65 && idade <= 100) {
+				idosos++;
+			}else {
+				System.out.println("Idade Inválida");
+			}
+			
+			total = menores + jovensAdultos + adultos + maduros + idosos;
+			
+			
+			System.out.println("");
+			System.out.print("Deseja continuar cadastrando: [1= sim / 0= não] ");
+			resp = sc.nextInt();
+			System.out.println("");
+		}
+		menores = menores * 100 / total;
+		jovensAdultos = jovensAdultos * 100 / total;
+		adultos = menores * 100 / total;
+		menores = menores * 100 / total;
+		menores = menores * 100 / total;
+		
+		
+		
+		System.out.println("");
+		System.out.printf("A porcentagem de menores é %.2f %", menores);
+
+	}
+}

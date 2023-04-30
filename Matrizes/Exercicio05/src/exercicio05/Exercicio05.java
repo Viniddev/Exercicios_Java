@@ -1,0 +1,33 @@
+package exercicio05;
+import java.util.Scanner;
+
+public class Exercicio05 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int matriz[][] = new int[5][5];
+		int busca = 0;
+		
+		//escrever
+		
+		for(int i = 0; i < 5; i++) {
+			for(int j = 0; j < 5; j++) {
+				System.out.print("Digite um número: ");
+				matriz[i][j] = sc.nextInt();
+			}
+		}
+		
+		//buscar
+		
+		System.out.print("Qual número deseja buscar? ");
+		busca= sc.nextInt();
+
+		for(int i = 0; i < 5; i++) {
+			for(int j = 0; j < 5; j++) {
+				if(busca == matriz[i][j]) {
+					System.out.printf("O número %d está na posição [%d][%d]", busca, i, j);
+				}
+			}
+		}
+	}
+}

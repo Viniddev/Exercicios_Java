@@ -1,0 +1,32 @@
+package exercicio06;
+import java.util.Scanner;
+
+public class Exercicio06 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		String sexo;
+		int masculinos = 0, femininos = 0, NBinario = 0;
+		float percentMasc, percentFem, PercentNB;
+		
+		for(int i = 0; i < 30; i++) {
+			System.out.print("Digite o sexo: [M/F/NB] ");
+			sexo = sc.next().toUpperCase().trim();
+			
+			if(sexo.equals("M")) {
+				masculinos += 1;
+			}else if(sexo.equals("F")) {
+				femininos += 1;
+			}else if(sexo.equals("NB")) {
+				NBinario += 1;
+			}else {
+				System.out.print("Digite uma opção válida");
+			}
+		}
+		
+		int tot = masculinos + femininos + NBinarios;
+		
+		System.out.printf("Masculinos: %d \n Femininos: %d \n Não Binarios: %d", masculinos, femininos, NBinario);
+	}
+}

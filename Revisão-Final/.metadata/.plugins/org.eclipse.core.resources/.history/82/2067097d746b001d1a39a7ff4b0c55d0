@@ -1,0 +1,33 @@
+package exercicio01;
+import java.util.Scanner;
+
+public class Exercicio01 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int maior = 0;
+		int numeros[] = new int[10];
+		boolean rodada = true;
+
+		for(int n = 0; n < 10; n++) {
+			if(rodada){
+				System.out.print("Digite um número: ");
+				numeros[n] = sc.nextInt();
+				
+				if(n == 0){
+					maior = numeros[n];
+				}else if(numeros[n] > maior){
+					maior = numeros[n];
+				}else if(n == 9){
+					System.out.println("");
+					n = -1;
+					rodada = false;
+				}
+			}else{
+				System.out.print(numeros[n] + ", ");
+			}
+			
+		}
+		System.out.println("O maior número digitado foi: " + maior);
+	}
+}

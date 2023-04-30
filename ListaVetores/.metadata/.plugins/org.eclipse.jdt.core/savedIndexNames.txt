@@ -1,0 +1,8 @@
+INDEX VERSION 1.131+C:\Users\Diasv\OneDrive\Área de Trabalho\Trabalho\Estudos Java\Estudos\ListaVetores\.metadata\.plugins\org.eclipse.jdt.core
+240880419.index
+1865797976.index
+2798281132.index
+3600848163.index
+1220804736.index
+3135399640.index
+3543452875.index

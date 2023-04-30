@@ -1,0 +1,24 @@
+package exercicio08;
+import java.util.Scanner;
+
+public class exercicio08 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Digite Um número: ");
+		float numero1 = sc.nextFloat();
+		System.out.print("Digite Mais um número: ");
+		float numero2 = sc.nextFloat();
+
+		System.out.print("-------------------------------------------------");
+		System.out.print("1) Somar");
+		System.out.print("2) Subtrair ");
+		System.out.print("3) Multiplicar");
+		System.out.print("4) Dividir");
+		System.out.print("5) Sair do programa");
+		System.out.print("-------------------------------------------------");
+
+	}
+
+}

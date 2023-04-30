@@ -1,0 +1,21 @@
+package exercicio02;
+import java.util.Scanner;
+
+public class Exercicio02 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Digite um número: ");
+		float num1 = sc.nextFloat();
+		System.out.print("Digite mais um número: ");
+		float num2 = sc.nextFloat();
+		
+		
+		if(num1 == num2) {
+			System.out.print("Os números digitados são iguais");
+		}else {
+			System.out.print("Os números digitados são diferentes");
+		}
+	}
+}

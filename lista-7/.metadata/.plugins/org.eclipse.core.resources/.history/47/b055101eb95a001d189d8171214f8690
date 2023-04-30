@@ -1,0 +1,24 @@
+package exercicio04;
+import java.util.Scanner;
+
+public class Exercicio04 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		float intervalo, divisor;
+		
+		
+		System.out.print("Digite intervalo de análise: ");
+		intervalo = sc.nextFloat();
+		System.out.print("Digite divisor: ");
+		divisor = sc.nextFloat();
+		
+		System.out.printf("Número divisíveis por %.1f no intervalo de 1 e %.1f: ", divisor, intervalo);
+		for(int i = 1; i <= intervalo; i++) {
+			if(i % divisor == 0) {
+				System.out.print(i + " ");
+			}
+		}
+	}
+}

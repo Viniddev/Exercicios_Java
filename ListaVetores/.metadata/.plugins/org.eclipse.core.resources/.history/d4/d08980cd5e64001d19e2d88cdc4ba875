@@ -1,0 +1,22 @@
+package exercicio05;
+import java.util.Scanner;
+
+public class Exercicio05 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		float vetor[] = new float[10];
+		int pares = 0;
+		
+		for(int n = 0; n < 8; n++) {
+			System.out.printf("Digite um valor para a posição %d: ", n);
+			vetor[n] = sc.nextFloat();
+			
+			if(vetor[n] % 2 == 0) {
+				pares++;
+			}
+		}
+		
+		System.out.printf("Foram digitados %d valores pares", pares);
+	}
+}

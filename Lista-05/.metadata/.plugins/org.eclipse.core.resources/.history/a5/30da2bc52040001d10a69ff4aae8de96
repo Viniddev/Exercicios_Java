@@ -1,0 +1,25 @@
+package exercicio05;
+import java.util.Scanner;
+
+public class Exercicio05 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Digite a Primeira nota do aluno: ");
+		float nota1 = sc.nextFloat();
+		System.out.print("Digite a Segunda nota do aluno: ");
+		float nota2 = sc.nextFloat();
+		System.out.print("Digite a Terceira nota do aluno: ");
+		float nota3 = sc.nextFloat();
+		
+		float media = (nota1+nota2+nota3)/3;
+		
+		if(media == 0){
+			System.out.printf("A nota %.2f assegura reprovação direta.");
+		}else if(media > 0 && media <= 6){
+			System.out.printf("A nota %.2f assegura reprovação com direito a recuperação");
+		}else if(media > 6 && media <= 10){}
+		
+	}
+}

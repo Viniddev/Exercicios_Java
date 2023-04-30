@@ -1,0 +1,16 @@
+package exercicio07;
+import java.util.Scanner;
+
+public class Exercicio07 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Digite o salário do usuário: ");
+		float sal = sc.nextFloat();
+		System.out.print("Digite o valor da parcela: ");
+		float parc = sc.nextFloat();
+
+		
+	}
+}

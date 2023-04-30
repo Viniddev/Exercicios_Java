@@ -1,0 +1,41 @@
+package pg;
+import java.util.Scanner;
+
+public class Pg {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		double razao = 0, inicial = 0, ultimo = 0;
+		int termos = 0;
+		
+		System.out.print("Digite o A1: ");
+		inicial = sc.nextDouble();
+		System.out.print("Digite Quantos termos terá a PG: ");
+		termos = sc.nextInt();
+		System.out.print("Digite a Razão: ");
+		razao = sc.nextDouble();
+		System.out.println("");
+		
+		ultimo = (float) inicial * Math.pow(razao, (termos - 1));
+		
+		if(inicial > ultimo) {
+			razao = razao * -1;
+			for(double i = inicial; i >= ultimo; i = i / razao) {
+				if(i > ultimo) {
+					System.out.print(i + " --> ");
+				}else{
+					System.out.print(i + ". ");
+				}
+			}
+		}else if(inicial < ultimo) {
+			for(double i = inicial; i <= ultimo; i = i * razao) {
+				if(i <  ultimo) {
+					System.out.print(i + " --> ");
+				}else{
+					System.out.print(i + ". ");
+				}
+			}
+		}
+	}
+}

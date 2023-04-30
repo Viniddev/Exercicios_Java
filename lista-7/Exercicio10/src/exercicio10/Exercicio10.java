@@ -1,0 +1,22 @@
+package exercicio10;
+import java.util.Scanner;
+
+public class Exercicio10 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		float chico = (float) 1.50;
+		float juca = (float) 1.10;
+		int cont = 0;
+		
+		while(chico > juca) {
+			cont ++;
+			
+			chico += 0.1;
+			juca += 0.4;
+		}
+		
+		System.out.printf("Após %d anos, Juca com (%.2f)m ficou maior que Chico que tinha (%.2f)m", cont, juca, chico);
+	}
+}

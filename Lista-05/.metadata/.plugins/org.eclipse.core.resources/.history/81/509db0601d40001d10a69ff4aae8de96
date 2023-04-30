@@ -1,0 +1,24 @@
+package exercicio03;
+import java.util.Scanner;
+
+public class Exercicio03 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Digite um número: ");
+		float num1 = sc.nextFloat();
+		System.out.print("Digite mais um número: ");
+		float num2 = sc.nextFloat();
+		System.out.print("Digite mais um número: ");
+		float num3 = sc.nextFloat();
+		
+		if(num1 > num2 && num1 > num3){
+			System.out.printf("O número %.2f na posição 1 é o maior", num1);
+		}else if(num2 > num1 && num2 > num3){
+			System.out.printf("O número %.2f na posição 2 é o maior", num2);
+		}else {
+			System.out.printf("O número %.2f na posição 3 é o maior", num3);
+		}
+	}
+}

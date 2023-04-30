@@ -1,0 +1,15 @@
+package exercicio06;
+import java.util.Scanner;
+
+public class Exercicio06 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		char sexo;
+		int masculinos, femininos, NBinario;
+		
+		System.out.print("Digite o sexo: [M/F/NB]");
+		
+	}
+}

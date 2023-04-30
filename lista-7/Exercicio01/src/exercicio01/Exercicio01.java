@@ -1,0 +1,23 @@
+package exercicio01;
+import java.util.Scanner;
+
+public class Exercicio01 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Ordem crescente");
+		for(int i = 0; i<=100; i++) {
+			System.out.print(i + " ");
+		}
+		
+		System.out.println("\n\n");
+		
+		System.out.println("Ordem decrescente");
+		for(int j = 100; j>=0; j--) {
+			System.out.print(j + " ");
+		}
+
+	}
+
+}

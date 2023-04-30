@@ -1,0 +1,13 @@
+package exercicio10;
+import java.util.Scanner;
+
+public class Exercicio10 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		float chico = (float) 1.5;
+		float juca = (float) 1.10;
+		while(chico > juca) {}
+	}
+}

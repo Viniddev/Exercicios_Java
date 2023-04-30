@@ -1,0 +1,16 @@
+package exericio04;
+import java.util.Scanner;
+
+public class exericio04 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		float vetor[] = new float[8];
+		
+		for(int n = 0; n < 8; n++) {
+			System.out.print("Digite um valor: ");
+			vetor[n] = sc.nextFloat();
+			
+		}
+	}
+}

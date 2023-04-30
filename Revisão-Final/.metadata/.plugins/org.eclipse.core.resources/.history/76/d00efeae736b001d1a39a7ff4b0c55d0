@@ -1,0 +1,24 @@
+package exercicio01;
+import java.util.Scanner;
+
+public class Exercicio01 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int maior = 0;
+		int numeros[] = new int[10];
+
+		for(int n = 0; n < 10; n++) {
+			System.out.print("Digite um número: ");
+			numeros[n] = sc.nextInt();
+			
+			if(n == 0) {
+				maior = numeros[n];
+			}
+			
+			if(numeros[n] > maior) {
+				maior = numeros[n];
+			}
+		}
+	}
+}

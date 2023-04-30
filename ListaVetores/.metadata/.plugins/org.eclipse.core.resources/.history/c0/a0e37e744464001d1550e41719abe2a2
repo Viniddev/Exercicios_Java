@@ -1,0 +1,23 @@
+package exercicio2;
+import java.util.Scanner;
+public class Exercício2 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int vetor[] = new int[6];
+		boolean entrada = false;
+		
+		for(int c = 0; c < 6; c++){
+			if(entrada == false) {
+				System.out.printf("Digite um número para a posição %d do vetor: ", c);
+				vetor[c] = sc.nextInt();
+			}else{				
+				System.out.printf("Vetor[%d] = %d \n", c, vetor[c]);
+			}
+			if(entrada == false && c == 5) {
+				c = 0;
+				entrada = true;
+			}
+		}
+	}
+}

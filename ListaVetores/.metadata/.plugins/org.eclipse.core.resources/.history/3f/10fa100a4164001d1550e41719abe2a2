@@ -1,0 +1,18 @@
+package exercicio1;
+
+public class Exercicio1 {
+
+	public static void main(String[] args) {
+		int vetor[] = {1, 0, 5, -2, -5, 7};
+		int soma = 0;
+		
+		for(int c = 0; c < vetor.length; c++) {
+			if(c == 0 || c == 1 || c == 5) {
+				soma += vetor[c];
+			}else if(c == 4) {
+				vetor[c] = 100;
+			}
+			System.out.println(vetor[c]);
+		}
+	}
+}

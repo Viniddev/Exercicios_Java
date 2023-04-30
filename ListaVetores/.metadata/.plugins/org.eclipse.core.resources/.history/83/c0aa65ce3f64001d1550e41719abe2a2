@@ -1,0 +1,13 @@
+package exercicio1;
+
+public class Exercicio1 {
+
+	public static void main(String[] args) {
+		int vetor[] = {1, 0, 5, -2, -5, 7};
+		
+		for(int c : vetor) {
+			System.out.printf("%d", c);
+		}
+		 
+	}
+}
